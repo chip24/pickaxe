@@ -1,0 +1,739 @@
+                                                                     ^
+spec/aaagmnr/finder_spec.rb:7:22: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside {.
+            specify {expect(find.signature_of("wombat")).to eq("abmotw") }
+                     ^
+spec/aaagmnr/finder_spec.rb:7:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            specify {expect(find.signature_of("wombat")).to eq("abmotw") }
+                                              ^^^^^^^^
+spec/aaagmnr/finder_spec.rb:7:64: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            specify {expect(find.signature_of("wombat")).to eq("abmotw") }
+                                                               ^^^^^^^^
+spec/aaagmnr/finder_spec.rb:10:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+        describe "lookup" do
+                 ^^^^^^^^
+spec/aaagmnr/finder_spec.rb:11:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            subject(:finder) { Finder.new(["cat", "wombat"])}
+        ^^^^
+spec/aaagmnr/finder_spec.rb:11:43: C: [Correctable] Style/WordArray: Use %w or %W for an array of words.
+            subject(:finder) { Finder.new(["cat", "wombat"])}
+                                          ^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:11:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            subject(:finder) { Finder.new(["cat", "wombat"])}
+                                           ^^^^^
+spec/aaagmnr/finder_spec.rb:11:51: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            subject(:finder) { Finder.new(["cat", "wombat"])}
+                                                  ^^^^^^^^
+spec/aaagmnr/finder_spec.rb:11:61: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+            subject(:finder) { Finder.new(["cat", "wombat"])}
+                                                            ^
+spec/aaagmnr/finder_spec.rb:13:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            it "returns the word if the word is given" do
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:14:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                expect(finder.lookup("cat")).to eq(["cat"])
+            ^^^^
+spec/aaagmnr/finder_spec.rb:14:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(finder.lookup("cat")).to eq(["cat"])
+                                     ^^^^^
+spec/aaagmnr/finder_spec.rb:14:53: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(finder.lookup("cat")).to eq(["cat"])
+                                                    ^^^^^
+spec/aaagmnr/finder_spec.rb:17:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            it "returns the word if an anagram is given" do
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:18:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                expect(finder.lookup("act")).to eq(["cat"])
+            ^^^^
+spec/aaagmnr/finder_spec.rb:18:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(finder.lookup("act")).to eq(["cat"])
+                                     ^^^^^
+spec/aaagmnr/finder_spec.rb:18:53: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(finder.lookup("act")).to eq(["cat"])
+                                                    ^^^^^
+spec/aaagmnr/finder_spec.rb:19:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(finder.lookup("tca")).to eq(["cat"])
+                                     ^^^^^
+spec/aaagmnr/finder_spec.rb:19:53: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(finder.lookup("tca")).to eq(["cat"])
+                                                    ^^^^^
+spec/aaagmnr/finder_spec.rb:22:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            it "returns nil if no word matches the anagram" do
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:23:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                expect(finder.lookup("wibble")).to be_nil
+            ^^^^
+spec/aaagmnr/finder_spec.rb:23:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(finder.lookup("wibble")).to be_nil
+                                     ^^^^^^^^
+spec/aaagmnr/finder_spec.rb:27:4: C: [Correctable] Layout/TrailingEmptyLines: Final newline missing.
+end
+   
+spec/aaagmnr/spec_helper.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+module Aaagmnr
+^
+spec/aaagmnr/spec_helper.rb:2:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    Rspec.describe Options do 
+^^^^
+spec/aaagmnr/spec_helper.rb:2:30: C: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected.
+    Rspec.describe Options do 
+                             ^
+spec/aaagmnr/spec_helper.rb:3:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        describe "without specifying a dictionary" do
+    ^^^^
+spec/aaagmnr/spec_helper.rb:3:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+        describe "without specifying a dictionary" do
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:4:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            it "returns the default dictionary" do
+        ^^^^
+spec/aaagmnr/spec_helper.rb:4:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            it "returns the default dictionary" do
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:5:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts = Options.new(["someword"])
+            ^^^^
+spec/aaagmnr/spec_helper.rb:5:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["someword"])
+                                    ^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:9:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            it "should retain specified words" do
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:10:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts = Options.new(["word1", "word2"])
+            ^^^^
+spec/aaagmnr/spec_helper.rb:10:17: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - opts.
+                opts = Options.new(["word1", "word2"])
+                ^^^^
+spec/aaagmnr/spec_helper.rb:10:36: C: [Correctable] Style/WordArray: Use %w or %W for an array of words.
+                opts = Options.new(["word1", "word2"])
+                                   ^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:10:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["word1", "word2"])
+                                    ^^^^^^^
+spec/aaagmnr/spec_helper.rb:10:46: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["word1", "word2"])
+                                             ^^^^^^^
+spec/aaagmnr/spec_helper.rb:14:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+        describe "when specifying a dictionary" do
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:15:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            it "should be able to reference the specified dictionary" do
+        ^^^^
+spec/aaagmnr/spec_helper.rb:15:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            it "should be able to reference the specified dictionary" do
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:16:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts = Options.new(["-d", "mydict", "someword"])
+            ^^^^
+spec/aaagmnr/spec_helper.rb:16:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["-d", "mydict", "someword"])
+                                    ^^^^
+spec/aaagmnr/spec_helper.rb:16:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["-d", "mydict", "someword"])
+                                          ^^^^^^^^
+spec/aaagmnr/spec_helper.rb:16:53: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["-d", "mydict", "someword"])
+                                                    ^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:17:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(opts.dictionary).to eq("mydict")
+                                              ^^^^^^^^
+spec/aaagmnr/spec_helper.rb:20:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+            it "should retain specified words" do
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:21:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts = Options.new(["-d", "mydict", "word1", "word2"])
+            ^^^^
+spec/aaagmnr/spec_helper.rb:21:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["-d", "mydict", "word1", "word2"])
+                                    ^^^^
+spec/aaagmnr/spec_helper.rb:21:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["-d", "mydict", "word1", "word2"])
+                                          ^^^^^^^^
+spec/aaagmnr/spec_helper.rb:21:53: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["-d", "mydict", "word1", "word2"])
+                                                    ^^^^^^^
+spec/aaagmnr/spec_helper.rb:21:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                opts = Options.new(["-d", "mydict", "word1", "word2"])
+                                                             ^^^^^^^
+spec/aaagmnr/spec_helper.rb:22:50: C: [Correctable] Style/WordArray: Use %w or %W for an array of words.
+                expect(opts.words_to_find).to eq(["word1", "word2"])
+                                                 ^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:22:51: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(opts.words_to_find).to eq(["word1", "word2"])
+                                                  ^^^^^^^
+spec/aaagmnr/spec_helper.rb:22:60: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+                expect(opts.words_to_find).to eq(["word1", "word2"])
+                                                           ^^^^^^^
+spec/aaagmnr/spec_helper.rb:27:1: C: [Correctable] Layout/TrailingEmptyLines: 2 trailing blank lines detected.
+spec/spec_helper.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+require "bundler/setup"
+^
+spec/spec_helper.rb:1:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+require "bundler/setup"
+        ^^^^^^^^^^^^^^^
+spec/spec_helper.rb:4:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+require "aaagmnr"
+        ^^^^^^^^^
+spec/spec_helper.rb:4:18: C: [Correctable] Layout/TrailingEmptyLines: Final newline missing.
+require "aaagmnr"
+                 
+
+13 files inspected, 166 offenses detected, 161 offenses autocorrectable
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ rubocop --format offenses
+ 13/13 files |===================== 100 ======================>| Time: 00:00:02 
+
+90   Style/StringLiterals [Safe Correctable]
+44   Layout/IndentationWidth [Safe Correctable]
+7    Style/FrozenStringLiteralComment [Unsafe Correctable]
+5    Layout/TrailingEmptyLines [Safe Correctable]
+3    Layout/SpaceInsideBlockBraces [Safe Correctable]
+3    Style/Documentation
+3    Style/WordArray [Safe Correctable]
+2    Layout/TrailingWhitespace [Safe Correctable]
+2    Lint/UselessAssignment [Unsafe Correctable]
+1    Layout/EmptyLineAfterMagicComment [Safe Correctable]
+1    Layout/LeadingCommentSpace [Safe Correctable]
+1    Lint/ScriptPermission [Safe Correctable]
+1    Metrics/MethodLength
+1    Style/AccessModifierDeclarations [Unsafe Correctable]
+1    Style/MutableConstant [Unsafe Correctable]
+1    Style/StringLiteralsInInterpolation [Safe Correctable]
+--
+166  Total in 13 files
+
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ find -iname rubocop
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ find -iname .rubocop.yml
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ ls -a
+.                  bin                 Gemfile       lib          sig
+..                 CHANGELOG.md        Gemfile.lock  LICENSE.txt  spec
+aaagmnr-0.1.0.gem  CODE_OF_CONDUCT.md  .git          Rakefile
+aaagmnr.gemspec    exe                 .gitignore    README.md
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ ls -al
+total 84
+drwxrwxr-x 8 chip chip 4096 Apr 20 07:37 .
+drwxrwxr-x 7 chip chip 4096 Apr 25 07:02 ..
+-rw-rw-r-- 1 chip chip 8704 Apr 18 07:49 aaagmnr-0.1.0.gem
+-rw-rw-r-- 1 chip chip 1640 Apr 18 07:49 aaagmnr.gemspec
+drwxrwxr-x 2 chip chip 4096 Apr 16 07:47 bin
+-rw-rw-r-- 1 chip chip   60 Apr 16 07:47 CHANGELOG.md
+-rw-rw-r-- 1 chip chip 5225 Apr 16 07:47 CODE_OF_CONDUCT.md
+drwxrwxr-x 2 chip chip 4096 Apr 18 07:21 exe
+-rw-rw-r-- 1 chip chip  208 Apr 26 06:25 Gemfile
+-rw-rw-r-- 1 chip chip 1765 Apr 26 06:25 Gemfile.lock
+drwxrwxr-x 7 chip chip 4096 Apr 16 07:47 .git
+-rw-rw-r-- 1 chip chip   73 Apr 16 07:47 .gitignore
+drwxrwxr-x 3 chip chip 4096 Apr 16 07:47 lib
+-rw-rw-r-- 1 chip chip 1078 Apr 16 07:47 LICENSE.txt
+-rw-rw-r-- 1 chip chip   78 Apr 16 07:47 Rakefile
+-rw-rw-r-- 1 chip chip 2276 Apr 16 07:47 README.md
+drwxrwxr-x 2 chip chip 4096 Apr 16 07:47 sig
+drwxrwxr-x 3 chip chip 4096 Apr 17 07:45 spec
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ rubocop
+Inspecting 12 files
+..WWCWCC.CWC
+
+Offenses:
+
+aaagmnr.gemspec:5:1: W: [Correctable] Gemspec/RequireMFA: metadata['rubygems_mfa_required'] must be set to 'true'.
+Gem::Specification.new do |spec| ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+aaagmnr.gemspec:15:32: W: Gemspec/RequiredRubyVersion: required_ruby_version and TargetRubyVersion (3.3, which may be specified in .rubocop.yml) should be equal.
+  spec.required_ruby_version = ">= 3.0.0"
+                               ^^^^^^^^^^
+aaagmnr.gemspec:22:3: C: [Correctable] Layout/LeadingCommentSpace: Missing space after #.
+  #spec.add_development_dependency "rspec", "~> 3.2"
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+aaagmnr.gemspec:42:42: C: [Correctable] Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec.add_dependency "date_by_example", '~> 0.1'
+                                         ^^^^^^^^
+exe/aaagmnr:1:1: W: Lint/ScriptPermission: Script file aaagmnr doesn't have execute permission.
+#!/usr/bin/env ruby
+^^^^^^^^^^^^^^^^^^^
+exe/aaagmnr:5:11: C: [Correctable] Layout/TrailingEmptyLines: Final newline missing.
+runner.run
+          
+lib/aaagmnr.rb:2:1: C: [Correctable] Layout/EmptyLineAfterMagicComment: Add an empty line after magic comments.
+require_relative "aaagmnr/finder"
+^
+lib/aaagmnr/finder.rb:2:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    class Finder
+^^^^
+lib/aaagmnr/finder.rb:3:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        def self.from_file(file_name)
+    ^^^^
+lib/aaagmnr/finder.rb:4:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            new(File.readlines(file_name))
+        ^^^^
+lib/aaagmnr/finder.rb:7:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        def initialize(dictionary_words)
+    ^^^^
+lib/aaagmnr/finder.rb:8:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            @signatures = {}
+        ^^^^
+lib/aaagmnr/finder.rb:10:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                word = line.chomp
+            ^^^^
+lib/aaagmnr/finder.rb:16:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        def lookup(word)
+    ^^^^
+lib/aaagmnr/finder.rb:17:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            signatures = signature_of(word)
+        ^^^^
+lib/aaagmnr/finder.rb:17:13: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - signatures. Did you mean signature?
+            signatures = signature_of(word)
+            ^^^^^^^^^^
+lib/aaagmnr/finder.rb:21:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        def signature_of(word)
+    ^^^^
+lib/aaagmnr/finder.rb:22:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            word.unpack("c*").sort.pack("c*")
+        ^^^^
+lib/aaagmnr/finder.rb:26:1: C: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected.
+lib/aaagmnr/options.rb:2:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    class Options
+^^^^
+lib/aaagmnr/options.rb:3:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        DEFAULT_DICTIONARY = "/home/chip/repos/pickaxe/words_alpha.txt"
+    ^^^^
+lib/aaagmnr/options.rb:3:30: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+        DEFAULT_DICTIONARY = "/home/chip/repos/pickaxe/words_alpha.txt"
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/options.rb:4:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        attr_reader :dictionary, :words_to_find
+    ^^^^
+lib/aaagmnr/options.rb:6:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        def initialize(argv)
+    ^^^^
+lib/aaagmnr/options.rb:7:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            @dictionary = DEFAULT_DICTIONARY
+        ^^^^
+lib/aaagmnr/options.rb:13:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            OptionParser.new do |opts|
+        ^^^^
+lib/aaagmnr/options.rb:14:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts.banner = "Usage:  anagram [ options ]  word..."
+            ^^^^
+lib/aaagmnr/options.rb:17:17: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                    @dictionary = dict
+                ^^^^
+lib/aaagmnr/options.rb:21:17: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                    puts opts
+                ^^^^
+lib/aaagmnr/options.rb:26:17: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                    argv = ["-h"] if argv.empty?
+                ^^^^
+lib/aaagmnr/options.rb:29:17: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                    warn e.message, "\n", opts
+                ^^^^
+lib/aaagmnr/runner.rb:2:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    class Runner
+^^^^
+lib/aaagmnr/runner.rb:3:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        def initialize(argv)
+    ^^^^
+lib/aaagmnr/runner.rb:4:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            @options = Options.new(argv)
+        ^^^^
+lib/aaagmnr/runner.rb:7:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        def run
+    ^^^^
+lib/aaagmnr/runner.rb:8:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            finder = Finder.from_file(@options.dictionary)
+        ^^^^
+lib/aaagmnr/runner.rb:10:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                anagrams = finder.lookup(word)
+            ^^^^
+lib/aaagmnr/runner.rb:12:17: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                    puts "Anagrams of #{word}: #{anagrams.join(", ")}"
+                ^^^^
+lib/aaagmnr/runner.rb:14:17: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                    puts "No anagrams of #{word} in #{@options.dictionary}"
+                ^^^^
+lib/aaagmnr/runner.rb:20:1: C: [Correctable] Layout/TrailingEmptyLines: 1 trailing blank lines detected.
+spec/aaagmnr/finder_spec.rb:2:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    Rspec.describe Finder do
+^^^^
+spec/aaagmnr/finder_spec.rb:3:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        describe "signature" do
+    ^^^^
+spec/aaagmnr/finder_spec.rb:4:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            subject(:finder) { Finder.new([]) }
+        ^^^^
+spec/aaagmnr/finder_spec.rb:6:70: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+            specify { expect(finder.signature_of("act")).to eq("act")}
+                                                                     ^
+spec/aaagmnr/finder_spec.rb:7:22: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside {.
+            specify {expect(find.signature_of("wombat")).to eq("abmotw") }
+                     ^
+spec/aaagmnr/finder_spec.rb:11:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            subject(:finder) { Finder.new(["cat", "wombat"])}
+        ^^^^
+spec/aaagmnr/finder_spec.rb:11:61: C: [Correctable] Layout/SpaceInsideBlockBraces: Space missing inside }.
+            subject(:finder) { Finder.new(["cat", "wombat"])}
+                                                            ^
+spec/aaagmnr/finder_spec.rb:14:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                expect(finder.lookup("cat")).to eq(["cat"])
+            ^^^^
+spec/aaagmnr/finder_spec.rb:18:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                expect(finder.lookup("act")).to eq(["cat"])
+            ^^^^
+spec/aaagmnr/finder_spec.rb:23:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                expect(finder.lookup("wibble")).to be_nil
+            ^^^^
+spec/aaagmnr/finder_spec.rb:27:4: C: [Correctable] Layout/TrailingEmptyLines: Final newline missing.
+end
+   
+spec/aaagmnr/spec_helper.rb:2:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    Rspec.describe Options do 
+^^^^
+spec/aaagmnr/spec_helper.rb:2:30: C: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected.
+    Rspec.describe Options do 
+                             ^
+spec/aaagmnr/spec_helper.rb:3:5: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        describe "without specifying a dictionary" do
+    ^^^^
+spec/aaagmnr/spec_helper.rb:4:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            it "returns the default dictionary" do
+        ^^^^
+spec/aaagmnr/spec_helper.rb:5:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts = Options.new(["someword"])
+            ^^^^
+spec/aaagmnr/spec_helper.rb:10:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts = Options.new(["word1", "word2"])
+            ^^^^
+spec/aaagmnr/spec_helper.rb:10:17: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - opts.
+                opts = Options.new(["word1", "word2"])
+                ^^^^
+spec/aaagmnr/spec_helper.rb:15:9: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            it "should be able to reference the specified dictionary" do
+        ^^^^
+spec/aaagmnr/spec_helper.rb:16:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts = Options.new(["-d", "mydict", "someword"])
+            ^^^^
+spec/aaagmnr/spec_helper.rb:21:13: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                opts = Options.new(["-d", "mydict", "word1", "word2"])
+            ^^^^
+spec/aaagmnr/spec_helper.rb:27:1: C: [Correctable] Layout/TrailingEmptyLines: 2 trailing blank lines detected.
+spec/spec_helper.rb:4:18: C: [Correctable] Layout/TrailingEmptyLines: Final newline missing.
+require "aaagmnr"
+                 
+
+12 files inspected, 63 offenses detected, 61 offenses autocorrectable
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ rubopcop -a
+Command 'rubopcop' not found, did you mean:
+  command 'rubocop' from deb rubocop (0.89.1+dfsg-3)
+Try: sudo apt install <deb name>
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ rubocop -a
+Inspecting 12 files
+..WCCWCC.CWC
+
+Offenses:
+
+aaagmnr.gemspec:5:1: W: [Corrected] Gemspec/RequireMFA: metadata['rubygems_mfa_required'] must be set to 'true'.
+Gem::Specification.new do |spec| ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+aaagmnr.gemspec:15:32: W: Gemspec/RequiredRubyVersion: required_ruby_version and TargetRubyVersion (3.3, which may be specified in .rubocop.yml) should be equal.
+  spec.required_ruby_version = ">= 3.0.0"
+                               ^^^^^^^^^^
+aaagmnr.gemspec:22:3: C: [Corrected] Layout/LeadingCommentSpace: Missing space after #.
+  #spec.add_development_dependency "rspec", "~> 3.2"
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+aaagmnr.gemspec:42:42: C: [Corrected] Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec.add_dependency "date_by_example", '~> 0.1'
+                                         ^^^^^^^^
+aaagmnr.gemspec:43:1: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+spec.metadata['rubygems_mfa_required'] = 'true'
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+aaagmnr.gemspec:43:15: C: [Corrected] Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+spec.metadata['rubygems_mfa_required'] = 'true'
+              ^^^^^^^^^^^^^^^^^^^^^^^
+aaagmnr.gemspec:43:42: C: [Corrected] Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+spec.metadata['rubygems_mfa_required'] = 'true'
+                                         ^^^^^^
+exe/aaagmnr:5:11: C: [Corrected] Layout/TrailingEmptyLines: Final newline missing.
+runner.run
+          
+lib/aaagmnr.rb:2:1: C: [Corrected] Layout/EmptyLineAfterMagicComment: Add an empty line after magic comments.
+require_relative "aaagmnr/finder"
+^
+lib/aaagmnr/finder.rb:2:1: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    class Finder
+^^^^
+lib/aaagmnr/finder.rb:3:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      def self.from_file(file_name)
+  ^^^^
+lib/aaagmnr/finder.rb:4:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        new(File.readlines(file_name))
+    ^^^^
+lib/aaagmnr/finder.rb:7:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      def initialize(dictionary_words)
+  ^^^^
+lib/aaagmnr/finder.rb:8:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        @signatures = {}
+    ^^^^
+lib/aaagmnr/finder.rb:9:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        dictionary_words.each do |line| ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/finder.rb:10:9: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            word = line.chomp
+        ^^^^
+lib/aaagmnr/finder.rb:11:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          signature = signature_of(word)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/finder.rb:12:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          (@signatures[signature] ||= []) << word
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/finder.rb:16:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      def lookup(word)
+  ^^^^
+lib/aaagmnr/finder.rb:17:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        signatures = signature_of(word)
+    ^^^^
+lib/aaagmnr/finder.rb:17:7: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - signatures. Did you mean signature?
+      signatures = signature_of(word)
+      ^^^^^^^^^^
+lib/aaagmnr/finder.rb:18:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        @signatures[signature]
+        ^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/finder.rb:21:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      def signature_of(word)
+  ^^^^
+lib/aaagmnr/finder.rb:22:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        word.unpack("c*").sort.pack("c*")
+    ^^^^
+lib/aaagmnr/finder.rb:26:1: C: [Corrected] Layout/TrailingWhitespace: Trailing whitespace detected.
+lib/aaagmnr/options.rb:2:1: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    class Options
+^^^^
+lib/aaagmnr/options.rb:3:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      DEFAULT_DICTIONARY = "/home/chip/repos/pickaxe/words_alpha.txt"
+  ^^^^
+lib/aaagmnr/options.rb:3:26: C: [Correctable] Style/MutableConstant: Freeze mutable objects assigned to constants.
+    DEFAULT_DICTIONARY = "/home/chip/repos/pickaxe/words_alpha.txt"
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/options.rb:4:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      attr_reader :dictionary, :words_to_find
+  ^^^^
+lib/aaagmnr/options.rb:6:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      def initialize(argv)
+  ^^^^
+lib/aaagmnr/options.rb:7:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        @dictionary = DEFAULT_DICTIONARY
+    ^^^^
+lib/aaagmnr/options.rb:8:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        parse(argv)
+        ^^^^^^^^^^^
+lib/aaagmnr/options.rb:9:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        @words_to_find = argv
+        ^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/options.rb:12:7: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+      private def parse(argv) ...
+      ^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/options.rb:13:7: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+          OptionParser.new do |opts|
+      ^^^^
+lib/aaagmnr/options.rb:14:9: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            opts.banner = "Usage:  anagram [ options ]  word..."
+        ^^^^
+lib/aaagmnr/options.rb:16:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          opts.on("-d", "--dict path", String, "Path to dictionary") do |dict| ...
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/options.rb:17:13: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                @dictionary = dict
+            ^^^^
+lib/aaagmnr/options.rb:20:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          opts.on("-h", "--help", "Show this message") do ...
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/options.rb:21:13: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                puts opts
+            ^^^^
+lib/aaagmnr/options.rb:22:13: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+            exit
+            ^^^^
+lib/aaagmnr/options.rb:25:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          begin ...
+          ^^^^^
+lib/aaagmnr/options.rb:26:13: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                argv = ["-h"] if argv.empty?
+            ^^^^
+lib/aaagmnr/options.rb:27:13: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+            opts.parse!(argv)
+            ^^^^^^^^^^^^^^^^^
+lib/aaagmnr/options.rb:29:11: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+              warn e.message, "\n", opts
+          ^^^^
+lib/aaagmnr/options.rb:30:13: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+            exit(-1)
+            ^^^^^^^^
+lib/aaagmnr/runner.rb:2:1: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    class Runner
+^^^^
+lib/aaagmnr/runner.rb:3:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      def initialize(argv)
+  ^^^^
+lib/aaagmnr/runner.rb:4:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        @options = Options.new(argv)
+    ^^^^
+lib/aaagmnr/runner.rb:7:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      def run
+  ^^^^
+lib/aaagmnr/runner.rb:8:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        finder = Finder.from_file(@options.dictionary)
+    ^^^^
+lib/aaagmnr/runner.rb:9:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        @options.words_to_find.each do |word| ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/aaagmnr/runner.rb:10:9: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            anagrams = finder.lookup(word)
+        ^^^^
+lib/aaagmnr/runner.rb:11:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          if anagrams ...
+          ^^^^^^^^^^^
+lib/aaagmnr/runner.rb:12:13: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                puts "Anagrams of #{word}: #{anagrams.join(", ")}"
+            ^^^^
+lib/aaagmnr/runner.rb:14:13: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+                puts "No anagrams of #{word} in #{@options.dictionary}"
+            ^^^^
+lib/aaagmnr/runner.rb:20:1: C: [Corrected] Layout/TrailingEmptyLines: 1 trailing blank lines detected.
+spec/aaagmnr/finder_spec.rb:2:1: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    Rspec.describe Finder do
+^^^^
+spec/aaagmnr/finder_spec.rb:3:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      describe "signature" do
+  ^^^^
+spec/aaagmnr/finder_spec.rb:4:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        subject(:finder) { Finder.new([]) }
+    ^^^^
+spec/aaagmnr/finder_spec.rb:5:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        specify { expect(finder.signature_of("cat")).to eq("act") }
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:6:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        specify { expect(finder.signature_of("act")).to eq("act") }
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:6:70: C: [Corrected] Layout/SpaceInsideBlockBraces: Space missing inside }.
+            specify { expect(finder.signature_of("act")).to eq("act")}
+                                                                     ^
+spec/aaagmnr/finder_spec.rb:7:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        specify { expect(find.signature_of("wombat")).to eq("abmotw") }
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:7:22: C: [Corrected] Layout/SpaceInsideBlockBraces: Space missing inside {.
+            specify {expect(find.signature_of("wombat")).to eq("abmotw") }
+                     ^
+spec/aaagmnr/finder_spec.rb:10:7: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+      describe "lookup" do ...
+      ^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:11:7: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+          subject(:finder) { Finder.new(["cat", "wombat"]) }
+      ^^^^
+spec/aaagmnr/finder_spec.rb:11:61: C: [Corrected] Layout/SpaceInsideBlockBraces: Space missing inside }.
+            subject(:finder) { Finder.new(["cat", "wombat"])}
+                                                            ^
+spec/aaagmnr/finder_spec.rb:13:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        it "returns the word if the word is given" do ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:14:11: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+              expect(finder.lookup("cat")).to eq(["cat"])
+          ^^^^
+spec/aaagmnr/finder_spec.rb:17:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        it "returns the word if an anagram is given" do ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:18:11: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+              expect(finder.lookup("act")).to eq(["cat"])
+          ^^^^
+spec/aaagmnr/finder_spec.rb:19:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          expect(finder.lookup("tca")).to eq(["cat"])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:22:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        it "returns nil if no word matches the anagram" do ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/finder_spec.rb:23:11: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+              expect(finder.lookup("wibble")).to be_nil
+          ^^^^
+spec/aaagmnr/finder_spec.rb:27:4: C: [Corrected] Layout/TrailingEmptyLines: Final newline missing.
+end
+   
+spec/aaagmnr/spec_helper.rb:2:1: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+    Rspec.describe Options do 
+^^^^
+spec/aaagmnr/spec_helper.rb:2:30: C: [Corrected] Layout/TrailingWhitespace: Trailing whitespace detected.
+    Rspec.describe Options do 
+                             ^
+spec/aaagmnr/spec_helper.rb:3:3: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+      describe "without specifying a dictionary" do
+  ^^^^
+spec/aaagmnr/spec_helper.rb:4:5: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+        it "returns the default dictionary" do
+    ^^^^
+spec/aaagmnr/spec_helper.rb:5:7: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+          opts = Options.new(["someword"])
+      ^^^^
+spec/aaagmnr/spec_helper.rb:6:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          expects(opts.dictionary).to eq(Options::DEFAULT_DICTIONARY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:9:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        it "should retain specified words" do ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:10:9: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            opts = Options.new(["word1", "word2"])
+        ^^^^
+spec/aaagmnr/spec_helper.rb:10:9: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - opts.
+        opts = Options.new(["word1", "word2"])
+        ^^^^
+spec/aaagmnr/spec_helper.rb:14:7: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+      describe "when specifying a dictionary" do ...
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:15:7: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+          it "should be able to reference the specified dictionary" do
+      ^^^^
+spec/aaagmnr/spec_helper.rb:16:9: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+            opts = Options.new(["-d", "mydict", "someword"])
+        ^^^^
+spec/aaagmnr/spec_helper.rb:17:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          expect(opts.dictionary).to eq("mydict")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:20:9: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+        it "should retain specified words" do ...
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:21:11: C: [Corrected] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+              opts = Options.new(["-d", "mydict", "word1", "word2"])
+          ^^^^
+spec/aaagmnr/spec_helper.rb:22:11: C: [Corrected] Layout/IndentationConsistency: Inconsistent indentation detected.
+          expect(opts.words_to_find).to eq(["word1", "word2"])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:27:1: C: [Corrected] Layout/TrailingEmptyLines: 2 trailing blank lines detected.
+spec/spec_helper.rb:4:18: C: [Corrected] Layout/TrailingEmptyLines: Final newline missing.
+require "aaagmnr"
+                 
+
+12 files inspected, 94 offenses detected, 90 offenses corrected, 3 more offenses can be corrected with `rubocop -A`
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ rubocop --format offenses
+ 12/12 files |===================== 100 ======================>| Time: 00:00:02 
+
+2  Lint/UselessAssignment [Unsafe Correctable]
+1  Gemspec/RequiredRubyVersion
+1  Style/MutableConstant [Unsafe Correctable]
+--
+4  Total in 4 files
+
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ rubocop -A
+Inspecting 12 files
+..W..WC...W.
+
+Offenses:
+
+aaagmnr.gemspec:15:32: W: Gemspec/RequiredRubyVersion: required_ruby_version and TargetRubyVersion (3.3, which may be specified in .rubocop.yml) should be equal.
+  spec.required_ruby_version = ">= 3.0.0"
+                               ^^^^^^^^^^
+lib/aaagmnr/finder.rb:17:7: W: [Corrected] Lint/UselessAssignment: Useless assignment to variable - signatures. Did you mean signature?
+      signatures = signature_of(word)
+      ^^^^^^^^^^
+lib/aaagmnr/options.rb:3:26: C: [Corrected] Style/MutableConstant: Freeze mutable objects assigned to constants.
+    DEFAULT_DICTIONARY = "/home/chip/repos/pickaxe/words_alpha.txt"
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/aaagmnr/spec_helper.rb:10:9: W: [Corrected] Lint/UselessAssignment: Useless assignment to variable - opts.
+        opts = Options.new(["word1", "word2"])
+        ^^^^
+
+12 files inspected, 4 offenses detected, 3 offenses corrected
+chip@chip-VirtualBox:~/repos/pickaxe/aaagmnr$ 
